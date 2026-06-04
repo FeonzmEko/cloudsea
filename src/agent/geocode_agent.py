@@ -9,8 +9,8 @@ from typing import Any
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage
 
-from src.agent.agent import _build_llm, _extract_json, _last_ai_text
 from src.agent.prompts import GEOCODE_SYSTEM_PROMPT
+from src.agent.shared import _build_llm, _extract_json, _last_ai_text
 from src.tools.geocode_tool import geocode_location
 
 logger = logging.getLogger(__name__)
